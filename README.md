@@ -1,3 +1,4 @@
+[![Run on Repl.it](https://repl.it/badge/github/momentum-morehouse/django-music-GabeJunior-1196)](https://repl.it/github/momentum-morehouse/django-music-GabeJunior-1196)
 # Django Music Collection
 
 Create an application to keep track of all the music albums you own. You can choose what fields each album should have, but it should have at least these three:
