@@ -32,7 +32,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-music-GabeJunior-1196.gabejunior1196.repl.co','django-music-GabeJunior-1196--gabejunior1196.repl.co']
 
 # Application definition
 
