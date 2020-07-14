@@ -19,6 +19,8 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #index is for homepage, standard
+    path('', album_views.index, name='home'),
 ]
 
 if settings.DEBUG:
