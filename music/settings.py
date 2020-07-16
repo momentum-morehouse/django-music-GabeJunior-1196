@@ -32,11 +32,12 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-music-GabeJunior-1196.gabejunior1196.repl.co','django-music-GabeJunior-1196--gabejunior1196.repl.co']
+ALLOWED_HOSTS = ['django-music-GabeJunior-1196.gabejunior1196.repl.co','django-music-GabeJunior-1196--gabejunior1196.repl.co', 'django-music-gabejunior-1196--rebeccaconley.repl.co', 'django-music-gabejunior-1196.rebeccaconley.repl.co', '10.128.0.7']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'registration', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,7 +51,7 @@ INSTALLED_APPS = [
 
     # Project-specific
     'users',
-    'album',
+    'albums',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +140,8 @@ INTERNAL_IPS = [
     '127.0.0.1',
     # ...
 ]
+
+LOGIN_REDIRECT_URL = '/home'
+
+SIMPLE_BACKEND_REDIRECT_URL = '/home'
+

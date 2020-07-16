@@ -1,13 +1,22 @@
 from django.db import models
 
-#create your models here,   
-class Album(model.Models):
-  artistname = models.CharField(max_length=255)
-  albumtitle = models.CharField(max_length=255)
-  released = models.DateField()
+# Create your models here.
+class Album(models.Model):
+    artist = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
+    released = models.DateField()
+    image_url = models.TextField(null=True, blank=True)
 
-  def __str__(self):
-    return f"{self.albumtitle}"
+    def __str__(self):
+      return f"{self.title} by {self.artist}"
 
 class Users(models.Model):
-  pass    
+  pass
+
+class Details(models.Model):
+  detail = models.ForeignKey(Album, on_delete=models.CASCADE, related_name="details")
+  text = models.TextField(null=True, blank=True)
+  date_added = models.DateTimeField(auto_now_add=True)
+
+  def __str__(self):
+    return f"{self.text}"
