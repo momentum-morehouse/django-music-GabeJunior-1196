@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+
     # Third-party
     'debug_toolbar',
     'django_extensions',
@@ -52,6 +53,7 @@ INSTALLED_APPS = [
     # Project-specific
     'users',
     'albums',
+    'books'
 ]
 
 MIDDLEWARE = [

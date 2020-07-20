@@ -2,20 +2,19 @@
 
 {% block content %}
 
-    <h1><strong>Music Catalog</strong></h1>
-    <p><button><a class="add" href="{% url 'add_albums' %}">Add New Album</a></button>
-    <button><a class="add" href="{% url 'book_index' %}">Individual Albums</a></button></p>
-
+    <h1><strong>Book Collection</strong></h1>
+    <p><button><a class="add" href="{% url 'add_albums' %}">Add New Book</a></button></p>
+    <button><a class="add" href="{% url 'list_albums' %}">Music Collection</a></button>
 
   <div class="everything">
           
-          {% for album in albums %}
+          {% for book in books %}
           <div class="flex">
           
-          <h2> "{{ album.title }}" </h2>
-          <img src="{{ album.image_url }}" height='25' width='25'>
-          <h4>By: {{ album.artist }}
-          <p> Released: {{ album.released }}</p>
+          <h2> "{{ books.book_title }}" </h2>
+          <img src="{{ books.book_cover }}" height='200' width='250'>
+          <h4>By: {{ books.author }}
+          <p> Published: {{ books.date_published }}</p>
         
           <p>
           <button class="button2"><a class="ablumsstuff" href="{% url 'albums_detail' pk=album.pk %}">Album Details</a></button>
@@ -29,6 +28,11 @@
           <br>
           {% endfor %}
        
+
+<button class="button2"> <a class="ablumsstuff" href="{% url 'delete_albums' pk=album.pk %}">Delete Album</a></button>
+
+
+
   </div>
 
 {% endblock %}
