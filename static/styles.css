@@ -2,12 +2,12 @@ body {
   background:rgb(89, 42, 165);
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 10px;
   font-family:Goudy Old Style;
 }
 
 .images {
-  border: white 2px solid;
+  border: white 3px solid;
 }
 
 img {
@@ -26,7 +26,7 @@ h1 {
 
 h2 {
   text-align: center;
-  color: orangered;
+  color: black;
   background: white;
   border-radius: 10%;
   font-size: 30px;
@@ -38,8 +38,8 @@ h2 {
 
 h4 {
   text-align: center;
-  color:  rgb(87, 16, 87);
-  background: rgb(236, 146, 113);
+  color:  black;
+  background: darkolivegreen;
   border-radius: 5%;
   font-size: 25px;
   width: 350px;
@@ -61,7 +61,7 @@ a.add {
 button {
   border-radius: 8px;
   padding: 8px 15px;
-  background: rgb(161, 68, 34);
+  background: black;
   color: blanchedalmond;
   text-decoration: none;
   
@@ -77,7 +77,7 @@ a.ablumsstuff {
 .button2 {
   border-radius: 8px;
   padding: 2px 2px;
-  background: rgb(167, 48, 5);
+  background: black;
   text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ a:hover, a:active {
   width: 350px;
   height: 500px;
   border-radius: 10%;
-  background:chartreuse;
+  background: beige;
   text-align: justify;
   text-justify: inter-word;
 }
