@@ -120,7 +120,7 @@ a:hover, a:active {
 
 .track_details{
   color: white;
-  border: 3px solid gold;
+  border: 2px solid gold;
   width: auto;
   border-radius: 5%;
   background: burlywood;
@@ -141,7 +141,7 @@ a:hover, a:active {
   word-spacing: 5px;
   line-height: .75;
   font-family:Goudy Old Style;
-  border: 3px solid rgb(207, 97, 57);
+  border: 2px solid rgb(207, 97, 57);
 }
 
 .image {
