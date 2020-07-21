@@ -1,20 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<button ><a class="add" href="{% url 'list_albums' %}">Return to Music Collection</a></button>
-<button ><a class="add" href="{% url 'book_index' %}">Book Collection</a></button>
-
 <h1>Edit Albums</h1>
 
 <div>
-
   <form action="{% url 'edit_albums' pk=album.pk %}" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <div>
       <button type="submit">Update Album</button>
-      <button><a class="add" href="{% url 'list_albums' %}">return to All Albums</a></button>
     </div>
   </form>
 </div>
